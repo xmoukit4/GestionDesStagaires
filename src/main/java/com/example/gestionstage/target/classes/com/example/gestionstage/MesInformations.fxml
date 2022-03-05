@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="640.0" style="-fx-background-color: #072227;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionstage.Controllers.UserController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="233.0" layoutY="98.0" stroke="BLACK" strokeType="INSIDE" width="237.0" />
+      <Text fx:id="NomPrenom" layoutX="250.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Et Prenom">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="147.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mes Informations">
+         <font>
+            <Font name="Calibri" size="48.0" />
+         </font>
+      </Text>
+      <VBox layoutX="33.0" layoutY="105.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Et Prenom:">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone:">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de Passe:">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Button layoutX="525.0" layoutY="242.0" mnemonicParsing="false" onMouseClicked="#ChangerMotPasse" style="-fx-background-color: #FFA500; -fx-background-radius: 10;" text="Changer" textFill="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="233.0" layoutY="144.0" stroke="BLACK" strokeType="INSIDE" width="237.0" />
+      <Text fx:id="Email" layoutX="250.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="233.0" layoutY="190.0" stroke="BLACK" strokeType="INSIDE" width="237.0" />
+      <Text fx:id="Telephone" layoutX="250.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="MotPasse" layoutX="233.0" layoutY="242.0" prefHeight="26.0" prefWidth="237.0" />
+      <Text fx:id="MotPassChange" fill="#11a401" layoutX="232.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de pass est change" wrappingWidth="243.6328125" visible="false">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

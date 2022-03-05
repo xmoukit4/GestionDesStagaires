@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" style="-fx-background-color: #072227;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionstage.Controllers.LoginController">
+   <children>
+      <Text fx:id="MotPassIncorrect" fill="RED" layoutX="504.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" text="Mot de pass est Incorrect" wrappingWidth="262.7366943359375">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Text>
+      <VBox layoutX="534.0" layoutY="496.0" prefHeight="131.0" prefWidth="203.0" AnchorPane.bottomAnchor="140.79999999999995">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#Login" prefHeight="51.0" prefWidth="203.0" style="-fx-background-color: #35858B; -fx-background-radius: 10;" text="Se Connecter" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="28.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Signup" prefHeight="51.0" prefWidth="203.0" style="-fx-background-color: #35858B; -fx-background-radius: 10;" text="S'inscrire" textFill="WHITE">
+
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="498.0" layoutY="281.0" prefHeight="187.0" prefWidth="283.0">
+         <children>
+            <VBox prefHeight="97.0" prefWidth="283.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="135.7366943359375">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="EmailField" prefHeight="47.0" prefWidth="283.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="97.0" prefWidth="283.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="135.7366943359375">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Text>
+                  <PasswordField fx:id="PasswordField" prefHeight="47.0" prefWidth="283.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <FontIcon iconLiteral="mdi2a-account" iconSize="128" layoutX="569.0" layoutY="246.0" text="󰀄" />
+   </children>
+</AnchorPane>

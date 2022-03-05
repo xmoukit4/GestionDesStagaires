@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" style="-fx-background-color: #072227;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionstage.Controllers.AdminController">
+   <children>
+      <Pane prefHeight="768.0" prefWidth="270.0" style="-fx-background-color: #35858B; -fx-border-style: none; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 0, 0, 5, 0);">
+         <children>
+            <VBox layoutY="240.0" prefHeight="200.0" prefWidth="271.0" spacing="50.0">
+               <children>
+                  <Button fx:id="AdminStagaires" mnemonicParsing="false" onMouseClicked="#AdminStagaires" prefHeight="57.0" prefWidth="270.0" style="-fx-background-color: #4FBDBA; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 2, 0, 0, 5);" text="Les Stagaires" textFill="WHITE" >
+                     <font>
+                        <Font name="Calibri" size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="AdminOffres" mnemonicParsing="false" prefHeight="57.0" prefWidth="270.0" style="-fx-background-color: #4FBDBA; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 2, 0, 0, 5);" text="Les Offres" textFill="WHITE" onMouseClicked="#toOffre">
+                     <font>
+                        <Font name="Calibri" size="32.0" />
+                     </font>
+                  </Button>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+               </children>
+            </VBox>
+         </children></Pane>
+      <Text fx:id="Title" fill="WHITE" layoutX="541.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Des Stagaires" wrappingWidth="480.7999511718751">
+         <font>
+            <Font name="Calibri" size="50.0" />
+         </font>
+      </Text>
+      <Button fx:id="DecoButton" layoutX="654.0" layoutY="293.0" mnemonicParsing="false" onMouseClicked="#Deconnextion" prefHeight="182.0" prefWidth="209.0" style="-fx-background-color: #FF0000; -fx-background-radius: 40; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0);" text="Deconnexion" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
